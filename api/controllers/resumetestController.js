@@ -1,6 +1,4 @@
 'use strict';
-//var mongoose = require('mongoose'),
-  //Question = mongoose.model('Questions');
 
 exports.current_question = function(req, res) {
 	if (req) { 
@@ -20,6 +18,7 @@ exports.current_question = function(req, res) {
 			res.send('Javascript (and front end), 10 years');
 		}
 		if(req.url.indexOf('q=Puzzle')>0){
+			//The answers seem to change
 			var abcd = 'ABCD';
 			var st = req.url.split(abcd)[1];
 			st = st.replace(new RegExp('%3E','g'), '>');
@@ -29,13 +28,7 @@ exports.current_question = function(req, res) {
 			var b = st.split('%0A')[2];
 			var c = st.split('%0A')[3];
 			var d = st.split('%0A')[4];
-			//st = st.replace(new RegExp('%0A', 'g'), '\r');
-			/*st = st.replace('D--%3C-','D<<<=');
-			st = st.replace('D-%3E--','D>>>=');	
-			st = st.replace('D%3E--','D>>>=');
-			st = st.replace(new RegExp('%3E','g'), '>');
-			st = st.replace(new RegExp('%3D','g'), '=');
-			st = st.replace(new RegExp('%3C','g'), '<');*/
+			//The if/else started from a theory that there's a logical replace pattern to the -,>,<,= combination
 			if(a.indexOf('<')>0){
 				if(a.indexOf('--<-')>0){	 
 					a = 'A=<<<';
@@ -126,13 +119,8 @@ exports.current_question = function(req, res) {
 			res.send('847-224-4791');
 		}
 		else{
-        res.send({ 'error': 'An error has occurred on ' + req.url }); 
+        	res.send({ 'error': 'An error has occurred on ' + req.url }); 
     	}
       } 
-			
-  //Question.find({}, function(err, task) {
-   // if (err)
-    //  res.send(err);
-   // res.json(task);
-  //});
+
 };
