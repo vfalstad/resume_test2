@@ -1,8 +1,8 @@
 'use strict';
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+//var mongoose = require('mongoose');
+//var Schema = mongoose.Schema;
 
-
+/*
 var QuestionSchema = new Schema({
   name: {
     type: String,
@@ -21,4 +21,4 @@ var QuestionSchema = new Schema({
   }
 });
 
-module.exports = mongoose.model('Questions', QuestionSchema);
+module.exports = mongoose.model('Questions', QuestionSchema); */

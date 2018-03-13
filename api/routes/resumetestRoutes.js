@@ -7,6 +7,10 @@ module.exports = function(app) {
  // 	.get
   app.route('/question')
     .get(resumetest.current_question);
+    app.route('/').get(resumetest.current_question);
+
+    app.route('/favicon.ico').get();
+
   // app.get('/question', (req, res) => {
     
  // });

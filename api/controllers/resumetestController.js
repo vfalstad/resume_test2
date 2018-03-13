@@ -1,6 +1,6 @@
 'use strict';
-var mongoose = require('mongoose'),
-  Question = mongoose.model('Questions');
+//var mongoose = require('mongoose'),
+  //Question = mongoose.model('Questions');
 
 exports.current_question = function(req, res) {
 	if (req) { 
