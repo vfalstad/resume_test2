@@ -37,8 +37,8 @@ exports.current_question = function(req, res) {
 			st = st.replace(new RegExp('%3D','g'), '=');
 			st = st.replace(new RegExp('%3C','g'), '<');*/
 			if(a.indexOf('<')>0){
-				if(a.indexOf('--<')>0){	 
-					a.replace('A--<-','A=><<');
+				if(a.indexOf('--<-')>0){	 
+					a = 'A=<<<';
 				}
 				else{
 					a = 'A=<<<';
@@ -89,6 +89,7 @@ exports.current_question = function(req, res) {
 			c = c.replace('C<---', 'C<<=<');
 			c = c.replace('C->--','C<>=>');
 			d = d.replace('D--<-','D<<<=');
+			d = d.replace('D-->-','D><>=');
 			d = d.replace('D->--','D>><=');	
 //			d = d.replace('D>---','D>>>=');
 //			d = d.replace('D---=','D><<=');
