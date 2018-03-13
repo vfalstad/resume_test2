@@ -90,6 +90,7 @@ exports.current_question = function(req, res) {
 			c = c.replace('C>---','C><=>');
 			c = c.replace('C<---', 'C<<=<');
 			c = c.replace('C->--','C<>=>');
+			c = c.replace('C-<--','C<<=<');
 			d = d.replace('D--<-','D<<<=');
 			d = d.replace('D-->-','D><>=');
 			d = d.replace('D->--','D>><=');	
@@ -97,7 +98,8 @@ exports.current_question = function(req, res) {
 //			d = d.replace('D---=','D><<=');
 //			d = d.replace('D---=','D<><=');
 			d = d.replace('D---=','D<<>=');
-			d = d.replace('D>---','D><>=');
+//			d = d.replace('D>---','D><>=');
+			d = d.replace('D>---','D>>>=');
 			d = d.replace('D-<--','D<<<=');
 			d = d.replace('D<---','D<<<=');
 			res.send(' ABCD' + '\r' + a + '\r' + b + '\r' + c + '\r' + d);
