@@ -24,10 +24,11 @@ exports.current_question = function(req, res) {
 			var st = req.url.split(a)[1];
 			st = st.replace(new RegExp('%0A', 'g'), '\r');
 			st = st.replace('D--%3C-','D<<<=');
-			st = st.replace('D-%3E-','D>>>=');	
+			st = st.replace('D-%3E--','D>>>=');	
 			st = st.replace('D%3E--','D>>>=');
-			//st = st.replace(new RegExp('%3E','g'), '>');
-			//st = st.replace(new RegExp('%3D','g'), '=');
+			st = st.replace(new RegExp('%3E','g'), '>');
+			st = st.replace(new RegExp('%3D','g'), '=');
+			st = st.replace(new RegExp('%3C','g'), '<');
 			st = st.replace('A---%3C', 'A=<<<');
 			st = st.replace('B---%3E', 'B>=<>');	
 			st = st.replace('A-->-','A=>><');
