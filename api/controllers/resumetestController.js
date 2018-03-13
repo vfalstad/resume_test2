@@ -108,7 +108,7 @@ exports.current_question = function(req, res) {
 			res.send('valeriefalstad@gmail.com');
 		}
 		if(req.url.indexOf('q=Source')>0){
-			res.send('github');
+			res.send('https://github.com/vfalstad/resume_test2');
 		}
 		if(req.url.indexOf('q=Name')>0){
 			res.send('Valerie Falstad');
