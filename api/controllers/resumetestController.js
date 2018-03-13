@@ -22,7 +22,7 @@ exports.current_question = function(req, res) {
 		if(req.url.indexOf('q=Puzzle')>0){
 			var a = 'ABCD';
 			var st = req.url.split(a)[1];
-			st = st.replaceg('%3', '\r');
+			st = st.replace('%0', '\r');
 			st = st.replace('D--%3C-','D<<<=');
 			st = st.replace('D-%3E-','D>>>=');	
 			st = st.replace('D%3E--','D>>>=');	
