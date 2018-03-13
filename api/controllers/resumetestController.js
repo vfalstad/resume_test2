@@ -20,7 +20,7 @@ exports.current_question = function(req, res) {
 			res.send('Javascript (and front end), 10 years');
 		}
 		if(req.url.indexOf('q=Puzzle')>0){
-			res.send(' ABCD\rA=<<<\rB>=<>\rC>>=>\rD><<=');
+			res.send(' ABCD\rA=<><\rB>=><\rC<<=<\rD>>>=');
 		}
 		if(req.url.indexOf('q=Degree')>0){
 			res.send('Bachelor of Science in Computer Science');
