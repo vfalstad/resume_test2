@@ -46,7 +46,8 @@ exports.current_question = function(req, res) {
 			}
 			else{
 				if(a.indexOf('-->')>0){	 
-					a.replace('A-->-','A=<>>');
+					//a.replace('A-->-','A=<>>');
+					a.replace('A-->-','A=>>>');
 				}
 				else{
 					if(a.indexOf('--->')>0){
@@ -83,6 +84,7 @@ exports.current_question = function(req, res) {
 			c = c.replace('C--->','C><=>');
 			c = c.replace('C>---','C>>=>');
 			c = c.replace('C<---', 'C<<=<');
+			c = c.replace('C->--','C<>=>');
 			d = d.replace('D--<-','D<<<=');
 			d = d.replace('D->--','D>>>=');	
 //			d = d.replace('D>---','D>>>=');
