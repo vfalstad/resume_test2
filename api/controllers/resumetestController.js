@@ -77,7 +77,7 @@ exports.current_question = function(req, res) {
 			b = b.replace('B--->', 'B>=>>');	
 			//a = a.replace('A-->-','A=>><');
 			b = b.replace('B--<-','B<=<<');
-			b = b.replace('B>---','B>=<>');
+			b = b.replace('B>---','B>=>>');
 			b = b.replace('B-->-','B>=>>');
 			b = b.replace('B---<','B<=<<');
 //			b = b.replace('B-=--','B<=<>');
@@ -85,6 +85,7 @@ exports.current_question = function(req, res) {
 			//st = st.replace('C--=-','C<>=<');
 			c = c.replace('C--=-','C><=<');
 			c = c.replace('C--->','C>>=>');
+			c = c.replace('C---<','C<<=<');
 			c = c.replace('C>---','C>>=>');
 			c = c.replace('C<---', 'C<<=<');
 			c = c.replace('C->--','C<>=>');
@@ -93,7 +94,8 @@ exports.current_question = function(req, res) {
 			d = d.replace('D->--','D>><=');	
 //			d = d.replace('D>---','D>>>=');
 //			d = d.replace('D---=','D><<=');
-			d = d.replace('D---=','D<><=');
+//			d = d.replace('D---=','D<><=');
+			d = d.replace('D---=','D<<>=');
 			d = d.replace('D>---','D><>=');
 			d = d.replace('D-<--','D<<<=');
 			d = d.replace('D<---','D<<<=');
