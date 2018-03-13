@@ -29,10 +29,11 @@ exports.current_question = function(req, res) {
 			st = st.replace(new RegExp('%3E','g'), '>');
 			st = st.replace(new RegExp('%3D','g'), '=');
 			st = st.replace(new RegExp('%3C','g'), '<');
-			st = st.replace('A---%3C', 'A=<<<');
-			st = st.replace('B---%3E', 'B>=<>');	
+			st = st.replace('A---<', 'A=<<<');
+			st = st.replace('A--->', 'A=>>>');
+			st = st.replace('B--->', 'B>=<>');	
 			st = st.replace('A-->-','A=>><');
-			st = st.replace('B--%3C-','B<=<<');
+			st = st.replace('B--<-','B<=<<');
 			st = st.replace('C--=-','C<>=<');
 			if(req.url.indexOf('d=Please+solve+this+puzzle%3A%0A+ABCD%0AA--%3C-%0AB---%3E%0AC--%3D-%0AD--%3E-%0A')>0){
 
