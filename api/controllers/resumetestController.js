@@ -45,7 +45,7 @@ exports.current_question = function(req, res) {
 				}
 			}
 			else{
-				if(a.indexOf('-->')>0){	 
+				if(a.indexOf('-->-')>0){	 
 					//a.replace('A-->-','A=<>>');
 					a.replace('A-->-','A=>>>');
 				}
@@ -59,7 +59,8 @@ exports.current_question = function(req, res) {
 						}
 						else{
 							if(a.indexOf('->--')>0){
-								a = 'A=><>';
+								//a = 'A=><>';
+								a = 'A=>>>';
 							}
 							else{
 								a = 'A=>>>';
