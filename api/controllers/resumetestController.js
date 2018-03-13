@@ -25,10 +25,10 @@ exports.current_question = function(req, res) {
 			st = st.replace(new RegExp('%3E','g'), '>');
 			st = st.replace(new RegExp('%3D','g'), '=');
 			st = st.replace(new RegExp('%3C','g'), '<');
-			var a = st.split('%0A')[2];
-			var b = st.split('%0A')[3];
-			var c = st.split('%0A')[4];
-			var d = st.split('%0A')[5];
+			var a = st.split('%0A')[1];
+			var b = st.split('%0A')[2];
+			var c = st.split('%0A')[3];
+			var d = st.split('%0A')[4];
 			//st = st.replace(new RegExp('%0A', 'g'), '\r');
 			/*st = st.replace('D--%3C-','D<<<=');
 			st = st.replace('D-%3E--','D>>>=');	
@@ -46,7 +46,7 @@ exports.current_question = function(req, res) {
 			}
 			else{
 				if(a.indexOf('-->')>0){	 
-					a.replace('A-->-','A=>><');
+					a.replace('A-->-','A=<>>');
 				}
 				else{
 					a = 'A=>>>';
