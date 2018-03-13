@@ -20,7 +20,7 @@ exports.current_question = function(req, res) {
 			res.send('Javascript (and front end), 10 years');
 		}
 		if(req.url.indexOf('q=Puzzle')>0){
-			res.send('ABCD A=<<< B>=>> C><=< D><>=');
+			res.send(' ABCD\rA=<<<\rB>=<>\rC>>=>\rD><<=');
 		}
 		if(req.url.indexOf('q=Degree')>0){
 			res.send('Bachelor of Science in Computer Science');
@@ -41,7 +41,7 @@ exports.current_question = function(req, res) {
 			res.send('847-224-4791');
 		}
 		else{
-        res.send({ 'error': 'An error has occurred' + req.url }); 
+        res.send({ 'error': 'An error has occurred on ' + req.url }); 
     	}
       } 
   //Question.find({}, function(err, task) {
