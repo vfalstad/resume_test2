@@ -60,7 +60,8 @@ exports.current_question = function(req, res) {
 						else{
 							if(a.indexOf('->--')>0){
 								//a = 'A=><>';
-								a = 'A=>>>';
+								//a = 'A=>>>';
+								a = 'A=>><';
 							}
 							else{
 								a = 'A=>>>';
