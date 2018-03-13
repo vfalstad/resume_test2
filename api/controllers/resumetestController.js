@@ -20,7 +20,7 @@ exports.current_question = function(req, res) {
 			res.send('Javascript (and front end), 10 years');
 		}
 		if(req.url.indexOf('q=Puzzle')>0){
-			if(req.url.indexOf('d=Please+solve+this+puzzle%3A%0A+ABCD%0AA--%3C-%0AB---%3E%0AC--%3D-%0AD--%3E-%0A')){
+			if(req.url.indexOf('d=Please+solve+this+puzzle%3A%0A+ABCD%0AA--%3C-%0AB---%3E%0AC--%3D-%0AD--%3E-%0A')>0){
 				res.send(' ABCD\rA=<><\rB>=><\rC<<=<\rD>>>=');
 			}
 			else{
