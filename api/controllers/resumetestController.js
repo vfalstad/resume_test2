@@ -31,7 +31,7 @@ exports.current_question = function(req, res) {
 				res.send(' ABCD\rA=<><\rB>=><\rC<<=<\rD>>>=');
 			}
 			else{
-				res.send(' ABCD\r' + st);
+				res.send(' ABCD' + st);
 			}
 		
 		}
