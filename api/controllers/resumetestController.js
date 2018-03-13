@@ -22,10 +22,14 @@ exports.current_question = function(req, res) {
 		if(req.url.indexOf('q=Puzzle')>0){
 			var a = 'ABCD';
 			var st = req.url.split(a)[1];
-			st = st.replace(new RegExp('%0', 'g'), '\r');
+			st = st.replace(new RegExp('%0A', 'g'), '\r');
 			st = st.replace('D--%3C-','D<<<=');
 			st = st.replace('D-%3E-','D>>>=');	
-			st = st.replace('D%3E--','D>>>=');	
+			st = st.replace('D%3E--','D>>>=');
+			st = st.replace(new RegExp('%3E','g'), '>');
+			st = st.replace(new RegExp('%3D','g'), '=');
+			st = st.replace('A---%3C', 'A=<<<');
+				
 			if(req.url.indexOf('d=Please+solve+this+puzzle%3A%0A+ABCD%0AA--%3C-%0AB---%3E%0AC--%3D-%0AD--%3E-%0A')>0){
 
 				res.send(' ABCD\rA=<><\rB>=><\rC<<=<\rD>>>=');
