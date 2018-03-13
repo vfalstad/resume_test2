@@ -59,8 +59,8 @@ exports.current_question = function(req, res) {
 			*/
 			b = b.replace('B--->', 'B>=<>');	
 			a = a.replace('A-->-','A=>><');
-			st = st.replace('B--<-','B<=<<');
-			b = st.replace('B-->-','B<=>>');
+			b = b.replace('B--<-','B<=<<');
+			b = b.replace('B-->-','B<=>>');
 			//st = st.replace('C--=-','C<>=<');
 			c = c.replace('C--=-','C<<=>');
 			d = d.replace('D--<-','D<<<=');
