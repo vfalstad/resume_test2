@@ -5,7 +5,7 @@
 exports.current_question = function(req, res) {
 	if (req) { 
 		if(req.url.indexOf('q=Ping')>0){
-			res.send('Ok');
+			res.send('OK');
 		}
 		if(req.url.indexOf('q=Referrer')>0){
 			res.send('Recruited via LinkedIn');
