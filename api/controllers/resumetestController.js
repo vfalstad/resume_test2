@@ -95,7 +95,7 @@ exports.current_question = function(req, res) {
 			d = d.replace('D---=','D<><=');
 			d = d.replace('D>---','D><>=');
 			d = d.replace('D-<--','D<<<=');
-			d.= d.replace('D<---','D<<<=');
+			d = d.replace('D<---','D<<<=');
 			res.send(' ABCD' + '\r' + a + '\r' + b + '\r' + c + '\r' + d);
 			
 		
