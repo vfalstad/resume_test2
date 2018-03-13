@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(app) {
-  var resumetest = require('../controllers/resumetestController');
+  const resumetest = require('../controllers/resumetestController');
 
   //  Routes
  // app.route('/')
