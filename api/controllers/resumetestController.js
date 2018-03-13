@@ -36,7 +36,7 @@ exports.current_question = function(req, res) {
 			st = st.replace(new RegExp('%3E','g'), '>');
 			st = st.replace(new RegExp('%3D','g'), '=');
 			st = st.replace(new RegExp('%3C','g'), '<');*/
-			if(a.indexOf('<')){
+			if(a.indexOf('<')>0){
 				if(a.indexOf('--<')>0){	 
 					a.replace('A--<-','A=><<');
 				}
