@@ -50,7 +50,7 @@ exports.current_question = function(req, res) {
         res.send({ 'error': 'An error has occurred on ' + req.url }); 
     	}
       } 
-			}
+			
   //Question.find({}, function(err, task) {
    // if (err)
     //  res.send(err);
