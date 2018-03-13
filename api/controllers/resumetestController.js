@@ -57,7 +57,12 @@ exports.current_question = function(req, res) {
 							a = 'A=<><';
 						}
 						else{
-							a = 'A=>>>';
+							if(a.indexOf('->--')>0){
+								a = 'A=><>';
+							}
+							else{
+								a = 'A=>>>';
+							}
 						}
 					}
 				}
@@ -72,6 +77,7 @@ exports.current_question = function(req, res) {
 			b = b.replace('B--<-','B<=<<');
 			b = b.replace('B-->-','B>=>>');
 			b = b.replace('B---<','B<=<<');
+			b = b.replace('B-=--','B<=<>');
 			//st = st.replace('C--=-','C<>=<');
 			c = c.replace('C--=-','C<<=>');
 			c = c.replace('C--->','C><=>');
@@ -83,6 +89,7 @@ exports.current_question = function(req, res) {
 //			d = d.replace('D---=','D><<=');
 			d = d.replace('D---=','D<><=');
 			d = d.replace('D>---','D><>=');
+			d = d.replace('D-<--','D<<<=');
 			res.send(' ABCD' + '\r' + a + '\r' + b + '\r' + c + '\r' + d);
 			
 		
