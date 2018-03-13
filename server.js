@@ -16,7 +16,7 @@ var express = require('express'),
 //app.use(bodyParser.json());
 
 
-const routes = require('./api/routes/resumetestRoutes'); //importing route
+ routes = require('./api/routes/resumetestRoutes'); //importing route
 routes(app); //register the route
 
 
