@@ -73,7 +73,7 @@ exports.current_question = function(req, res) {
 			st = st.replace('A->--','A=>>>');
 			st = st.replace('A-<--','A=<<<');
 			*/
-			b = b.replace('B--->', 'B>=<>');	
+			b = b.replace('B--->', 'B>=>>');	
 			//a = a.replace('A-->-','A=>><');
 			b = b.replace('B--<-','B<=<<');
 			b = b.replace('B-->-','B>=>>');
